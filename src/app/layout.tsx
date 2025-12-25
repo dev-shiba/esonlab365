@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import CertificationSection from "@/components/sections/CertificationSection";
 
 export const metadata: Metadata = {
   title: "ESONLAB DAYZ | 이손랩 데이즈",
@@ -26,6 +27,7 @@ export default function RootLayout({
         <main>
           {children}
         </main>
+        <CertificationSection />
         <Footer />
       </body>
     </html>
