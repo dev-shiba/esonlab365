@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { ArrowUpRight, ShieldCheck, Zap, Droplet, Sparkles } from "lucide-react";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 
 export default function ProductsPage() {

@@ -1,16 +1,15 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Link from "next/link";
+import { Link, usePathname } from "@/i18n/routing";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { useTranslations } from "next-intl";
 
 import LanguageSwitcher from "../common/LanguageSwitcher";
 
 export default function Header() {
-    const pathname = usePathname();
+    const pathname = usePathname(); // This already returns pathname without locale prefix
     const t = useTranslations('Navigation');
 
     const NAV_ITEMS = [

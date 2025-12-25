@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 import { useRef } from "react";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { cn } from "@/lib/utils";
 
 import HeroSection from "@/components/sections/HeroSection";
