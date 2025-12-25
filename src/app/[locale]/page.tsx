@@ -77,45 +77,46 @@ export default function Home() {
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Card 1: Unique Ingredients */}
+            {/* Card 1: Unique Ingredients - 크기 축소 */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="group relative aspect-[4/5] md:aspect-square overflow-hidden rounded-[40px] bg-gray-50 shadow-2xl border border-gray-100"
+              className="group relative aspect-[4/3] overflow-hidden rounded-[32px] bg-gray-50 shadow-xl border border-gray-100"
             >
               <Image
                 src="/k_beauty_ingredients_v3.png"
                 alt="Unique Ingredients"
                 fill
-                className="object-cover transition-transform duration-700 group-hover:scale-110"
+                className="object-cover transition-transform duration-700"
               />
-              <div className="absolute inset-0 flex items-end p-10">
+              <div className="absolute inset-0 flex items-end p-8">
                 <div className="relative z-10">
-                  <h3 className="text-2xl font-black text-gray-900 drop-shadow-sm">{t('ingredients_title')}</h3>
+                  <h3 className="text-xl font-black text-gray-900 drop-shadow-sm">{t('ingredients_title')}</h3>
                   <p className="text-gray-600 font-bold drop-shadow-sm">{t('ingredients_desc')}</p>
                 </div>
               </div>
             </motion.div>
 
-            {/* Card 2: Effective Product */}
+            {/* Card 2: Effective Product - 크기 축소 */}
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="group relative aspect-[4/5] md:aspect-square overflow-hidden rounded-[40px] bg-white shadow-2xl border border-gray-100"
+              className="group relative aspect-[4/3] overflow-hidden rounded-[32px] bg-white shadow-xl border border-gray-100"
             >
               <Image
-                src="/effective_product_v3.jpg"
+                src="/effective_product_melon.png"
                 alt="Effective Product"
                 fill
-                className="object-cover transition-transform duration-700 group-hover:scale-110"
+                className="object-cover transition-transform duration-700"
               />
-              <div className="absolute inset-0 flex items-end p-10">
+
+              <div className="absolute inset-0 flex items-end p-8">
                 <div className="relative z-10">
-                  <h3 className="text-2xl font-black text-gray-900">{t('effective_title')}</h3>
+                  <h3 className="text-xl font-black text-gray-900">{t('effective_title')}</h3>
                   <p className="text-gray-600 font-bold">{t('effective_desc')}</p>
                 </div>
               </div>
