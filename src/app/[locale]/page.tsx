@@ -55,7 +55,7 @@ export default function Home() {
             className="w-1 h-2 bg-brand-primary rounded-full"
           />
         </div>
-        <span className="text-[10px] font-black text-brand-primary/40 uppercase tracking-[0.2em]">Scroll</span>
+        <span className="text-[10px] font-black text-brand-primary/40 uppercase tracking-[0.2em]">{t('scroll_text')}</span>
       </motion.div>
 
 
@@ -70,7 +70,9 @@ export default function Home() {
             className="text-center"
           >
             <p className="text-2xl md:text-4xl lg:text-5xl font-black text-gray-900 leading-[1.2] tracking-tight">
-              {t('trust_text')}
+              {t.rich('trust_text', {
+                br: () => <br />
+              })}
             </p>
           </motion.div>
 
@@ -91,8 +93,8 @@ export default function Home() {
               />
               <div className="absolute inset-0 flex items-end p-10">
                 <div className="relative z-10">
-                  <h3 className="text-2xl font-black text-gray-900 drop-shadow-sm">독특한 원료 배합</h3>
-                  <p className="text-gray-600 font-bold drop-shadow-sm">Personalized Care</p>
+                  <h3 className="text-2xl font-black text-gray-900 drop-shadow-sm">{t('ingredients_title')}</h3>
+                  <p className="text-gray-600 font-bold drop-shadow-sm">{t('ingredients_desc')}</p>
                 </div>
               </div>
             </motion.div>
@@ -113,8 +115,8 @@ export default function Home() {
               />
               <div className="absolute inset-0 flex items-end p-10">
                 <div className="relative z-10">
-                  <h3 className="text-2xl font-black text-gray-900">효과적인 제품</h3>
-                  <p className="text-gray-600 font-bold">Verified Precision</p>
+                  <h3 className="text-2xl font-black text-gray-900">{t('effective_title')}</h3>
+                  <p className="text-gray-600 font-bold">{t('effective_desc')}</p>
                 </div>
               </div>
             </motion.div>
@@ -135,14 +137,15 @@ export default function Home() {
           >
             <div className="space-y-6">
               <h2 className="text-2xl md:text-4xl lg:text-5xl font-black leading-tight text-gray-900">
-                하얀 색소 한 방울,<br />
-                <span className="text-gradient">
-                  인공향 하나<br />넣지 않았습니다.
-                </span>
+                {t.rich('no_additives_title', {
+                  br: () => <br />,
+                  highlight: (chunks) => <span className="text-gradient">{chunks}</span>
+                })}
               </h2>
               <p className="text-xl text-gray-500 font-medium leading-relaxed">
-                스피룰리나 본연의 초록빛과 쌀겨수의 은은한 향기. <br />
-                자극 없이 오직 성분으로만 승부하는 진심을 담았습니다.
+                {t.rich('no_additives_desc', {
+                  br: () => <br />
+                })}
               </p>
             </div>
           </motion.div>
@@ -150,10 +153,10 @@ export default function Home() {
           <div className="flex-1 relative h-[500px] md:h-[650px] lg:h-[750px] w-full mt-32 md:mt-24 lg:mt-0 perspective-2000 flex justify-center lg:justify-start lg:ml-[15%]">
             <div className="relative w-full max-w-[400px] md:max-w-[600px] lg:max-w-[800px] h-full">
               {[
-                { src: "/concept_spirulina.png", label: "Pure Spirulina", x: 0, y: -60 },
-                { src: "/concept_rice_water.png", label: "Rice Bran Water", x: 70, y: -20 },
-                { src: "/concept_pudding_cream.png", label: "Pudding Texture", x: 140, y: 20 },
-                { src: "/concept_nature.png", label: "Clean Science", x: 210, y: 60 }
+                { src: "/concept_spirulina.png", label: t('pure_spirulina'), x: 0, y: -60 },
+                { src: "/concept_rice_water.png", label: t('rice_bran_water'), x: 70, y: -20 },
+                { src: "/concept_pudding_cream.png", label: t('pudding_texture'), x: 140, y: 20 },
+                { src: "/concept_nature.png", label: t('clean_science'), x: 210, y: 60 }
               ].map((item, idx) => (
                 <motion.div
                   key={idx}
@@ -223,20 +226,24 @@ export default function Home() {
           >
             <div className="space-y-6">
               <h2 className="text-2xl md:text-4xl lg:text-5xl font-black text-white leading-[1.1]">
-                To. <br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-200 via-white to-blue-100">진심 어린 변화</span>를 <br />꿈꾸는 당신에게
+                {t.rich('philosophy_title', {
+                  br: () => <br />,
+                  highlight: (chunks) => <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-200 via-white to-blue-100">{chunks}</span>
+                })}
               </h2>
               <div className="w-20 h-1 bg-brand-accent"></div>
             </div>
 
             <div className="space-y-8 text-xl text-white/90 leading-relaxed font-medium">
               <p>
-                "왜 민감성 피부는 건강한 광채를 가질 수 없을까?" <br />
-                우리는 이 질문 하나에 365일을 매달렸습니다.
+                {t.rich('philosophy_desc_1', {
+                  br: () => <br />
+                })}
               </p>
               <p>
-                강인한 생명력을 가진 스피룰리나를 <br className="hidden md:block" />
-                가장 깨끗한 환경에서 직접 배양하여 <br className="hidden md:block" />
-                색소와 향료 없이 오직 성분으로만 승부합니다.
+                {t.rich('philosophy_desc_2', {
+                  desktop: (chunks) => <><br className="hidden md:block" />{chunks}</>
+                })}
               </p>
             </div>
 
@@ -244,10 +251,10 @@ export default function Home() {
 
           <div className="flex-1 w-full lg:ml-[10%] grid grid-cols-2 gap-4 md:gap-8">
             {[
-              { label: "고단백질", value: "60%", unit: "스피룰리나 함량" },
-              { label: "원료 순도", value: "0%", unit: "화학 색소" },
-              { label: "피부 적합", value: "100%", unit: "저자극 테스트" },
-              { label: "수분 광채", value: "24h", unit: "임상 보습력" }
+              { label: t('stats_protein'), value: "60%", unit: t('stats_protein_unit') },
+              { label: t('stats_purity'), value: "0%", unit: t('stats_purity_unit') },
+              { label: t('stats_skin'), value: "100%", unit: t('stats_skin_unit') },
+              { label: t('stats_moisture'), value: "24h", unit: t('stats_moisture_unit') }
             ].map((stat, i) => (
               <motion.div
                 key={i}
@@ -281,8 +288,9 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-2xl md:text-4xl lg:text-5xl font-black text-gray-900 leading-[1.1] tracking-tighter"
           >
-            피부가 기억할 <br />
-            건강한 일상의 시작
+            {t.rich('cta_title', {
+              br: () => <br />
+            })}
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -291,8 +299,9 @@ export default function Home() {
             transition={{ delay: 0.2 }}
             className="text-xl text-gray-400 font-bold tracking-tight"
           >
-            지금 바로 이손랩 데이즈의 기적을 직접 경험해 보세요. <br />
-            공식몰 가입 즉시 사용 가능한 혜택이 기다리고 있습니다.
+            {t.rich('cta_desc', {
+              br: () => <br />
+            })}
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -302,10 +311,10 @@ export default function Home() {
             className="flex flex-col sm:flex-row gap-6 justify-center pt-8"
           >
             <Link href="/about" className="bg-brand-primary text-white px-12 py-6 rounded-3xl font-black text-xl shadow-2xl shadow-brand-primary/40 hover:scale-[1.05] transition-all text-center">
-              브랜드 자세히 보기
+              {t('cta_brand')}
             </Link>
             <Link href="/products" className="liquid-glass bg-white text-gray-900 px-12 py-6 rounded-3xl font-black text-xl hover:bg-gray-50 transition-all flex items-center justify-center gap-2 border-gray-100 border">
-              제품 보기 <ArrowUpRight className="w-6 h-6" />
+              {t('cta_product')} <ArrowUpRight className="w-6 h-6" />
             </Link>
           </motion.div>
         </div>

@@ -1,22 +1,73 @@
 {
-  "HomePage": {
-    "title": "ESONLAB DAYZ | 이손랩 데이즈",
-    "hero_copy": "피부 회복을 넘어선 광채수분크림",
-    "trust_text": "독특한 원료 배합과 효과적인 제품만을 선보입니다"
-  },
-  "Footer": {
-    "address": "주소: 경남 통영시 노산4길 39-33, 2층",
-    "company": "회사: 주식회사 이손랩 | 이메일: ESONLABDAYZ@GMAIL.COM",
-    "customer_center": "고객센터: 070-1234-5678 (10:00 - 17:00, 주말 및 공휴일 제외)",
-    "brand_menu": "브랜드",
-    "shopping_menu": "쇼핑",
-    "privacy": "개인정보처리방침",
-    "terms": "이용약관"
+  "Common": {
+    "brand_name": "이손랩 데이즈"
   },
   "Navigation": {
     "home": "홈",
     "about": "브랜드",
     "products": "제품",
     "contact": "문의"
+  },
+  "HomePage": {
+    "hero_title": "이손랩 데이즈",
+    "hero_copy": "피부 회복을 넘어선 <br></br> <highlight>광채수분크림</highlight>",
+    "trust_text": "독특한 원료 배합과 <br></br>효과적인 제품만을 선보입니다",
+    "scroll_text": "Scroll",
+    "ingredients_title": "독특한 원료 배합",
+    "ingredients_desc": "Personalized Care",
+    "effective_title": "효과적인 제품",
+    "effective_desc": "Verified Precision",
+    "no_additives_title": "하얀 색소 한 방울, <br></br><highlight>인공향 하나<br></br>넣지 않았습니다.</highlight>",
+    "no_additives_desc": "스피룰리나 본연의 초록빛과 쌀겨수의 은은한 향기. <br></br>자극 없이 오직 성분으로만 승부하는 진심을 담았습니다.",
+    "pure_spirulina": "Pure Spirulina",
+    "rice_bran_water": "Rice Bran Water",
+    "pudding_texture": "Pudding Texture",
+    "clean_science": "Clean Science",
+    "philosophy_title": "To. <br></br><highlight>진심 어린 변화</highlight>를 <br></br>꿈꾸는 당신에게",
+    "philosophy_desc_1": "\"왜 민감성 피부는 건강한 광채를 가질 수 없을까?\" <br></br>우리는 이 질문 하나에 365일을 매달렸습니다.",
+    "philosophy_desc_2": "강인한 생명력을 가진 스피룰리나를 <desktop>가장 깨끗한 환경에서 직접 배양하여 </desktop><desktop>색소와 향료 없이 오직 성분으로만 승부합니다.</desktop>",
+    "stats_protein": "고단백질",
+    "stats_protein_unit": "스피룰리나 함량",
+    "stats_purity": "원료 순도",
+    "stats_purity_unit": "화학 색소",
+    "stats_skin": "피부 적합",
+    "stats_skin_unit": "저자극 테스트",
+    "stats_moisture": "수분 광채",
+    "stats_moisture_unit": "임상 보습력",
+    "cta_title": "피부가 기억할 <br></br>건강한 일상의 시작",
+    "cta_desc": "지금 바로 이손랩 데이즈의 기적을 직접 경험해 보세요. <br></br>공식몰 가입 즉시 사용 가능한 혜택이 기다리고 있습니다.",
+    "cta_brand": "브랜드 자세히 보기",
+    "cta_product": "제품 보기"
+  },
+  "AboutPage": {
+    "title": "Care, Reconsidered. DAYZ",
+    "content_1": "이손랩 데이즈는 기존의 스킨케어 공식을 넘어, 더 나은 솔루션을 제안하는 브랜드입니다.",
+    "content_2": "우리는 한국의 원료를 기반으로 하며 동시에 새로운 원료를 찾아 함께 배합하여 새로운 방향을 제시합니다.<br></br>그 첫 시작은 스피룰리나입니다.",
+    "content_3": "매일매일 검증된 효능과 안전성 위에<br></br>하나하나, 확실하게 만들어 갑니다."
+  },
+  "ProductsPage": {
+    "name": "스피룰365 그린 수분 크림",
+    "description": "쌀겨수 67% + 스피룰리나 (Micro algae)<br></br>민감성 피부 적합 / 수분 개선 / 피부 컨디션 개선 / 저자극 테스트 완료<br></br>7 FREE<br></br>하얀 색소 무첨가",
+    "buy_naver": "네이버 스마트스토어",
+    "buy_coupang": "쿠팡"
+  },
+  "ContactPage": {
+    "title": "문의하기",
+    "subtitle": "비즈니스 협력",
+    "description": "비즈니스 제휴 및 대량 구매 문의를 기다립니다. <br></br>이손랩 데이즈와 함께 새로운 성장을 경험하세요.",
+    "email_label": "제휴 문의 이메일",
+    "email": "ESONLABDAYZ@GMAIL.COM"
+  },
+  "Footer": {
+    "tagline": "케어, 그 본질을 다시 생각하다. <br></br>기존의 스킨케어가 끝나는 곳에서 데이즈가 시작됩니다.",
+    "address": "주소: 경남 통영시 노산4길 39-33, 2층",
+    "company": "회사: 주식회사 이손랩 | 이메일: ESONLABDAYZ@GMAIL.COM",
+    "customer_center": "고객센터: 070-1234-5678 (10:00 - 17:00, 주말 및 공휴일 제외)",
+    "brand_menu": "브랜드",
+    "shopping_menu": "쇼핑",
+    "privacy": "개인정보처리방침",
+    "terms": "이용약관",
+    "naver_store": "네이버 스토어",
+    "coupang": "쿠팡"
   }
 }

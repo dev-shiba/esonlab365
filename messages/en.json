@@ -1,22 +1,73 @@
 {
+  "Common": {
+    "brand_name": "ESONLAB DAYZ"
+  },
+  "Navigation": {
+    "home": "Home",
+    "about": "About",
+    "products": "Products",
+    "contact": "Contact"
+  },
   "HomePage": {
-    "title": "ESONLAB DAYZ",
-    "hero_copy": "Beyond Repair. Hydration That Reveals Healthy Radiance.",
-    "trust_text": "We create only what truly works, through distinctive ingredient combinations."
+    "hero_title": "ESONLAB DAYZ",
+    "hero_copy": "Beyond Repair.<br></br><highlight>Hydration That Reveals Healthy Radiance.</highlight>",
+    "trust_text": "We create only what truly works,<br></br>through distinctive ingredient combinations.",
+    "scroll_text": "Scroll",
+    "ingredients_title": "Unique Formulation",
+    "ingredients_desc": "Personalized Care",
+    "effective_title": "Effective Product",
+    "effective_desc": "Verified Precision",
+    "no_additives_title": "Not a single drop of white pigment,<br></br><highlight>Not a single Artificial Fragrance.</highlight>",
+    "no_additives_desc": "The natural green of Spirulina and the subtle scent of Rice Bran Water. <br></br>Sincerity that competes only with ingredients without irritation.",
+    "pure_spirulina": "Pure Spirulina",
+    "rice_bran_water": "Rice Bran Water",
+    "pudding_texture": "Pudding Texture",
+    "clean_science": "Clean Science",
+    "philosophy_title": "To. You who dream of <br></br><highlight>geniunely sincere changes</highlight>",
+    "philosophy_desc_1": "\"Why can't sensitive skin have a healthy radiance?\" <br></br>We held onto this single question for 365 days.",
+    "philosophy_desc_2": "Spirulina with strong vitality <desktop>is cultivated directly in the cleanest environment, </desktop><desktop>competing only with ingredients without pigments or fragrances.</desktop>",
+    "stats_protein": "Protein",
+    "stats_protein_unit": "Spirulina Content",
+    "stats_purity": "Purity",
+    "stats_purity_unit": "Chemical Pigment",
+    "stats_skin": "Safe",
+    "stats_skin_unit": "Hypoallergenic Test",
+    "stats_moisture": "Radiance",
+    "stats_moisture_unit": "Clinical Hydration",
+    "cta_title": "The beginning of healthy daily life <br></br>that your skin will remember",
+    "cta_desc": "Experience the miracle of ESONLAB DAYZ right now. <br></br>Benefits available immediately upon signing up for the official mall await you.",
+    "cta_brand": "Brand Story",
+    "cta_product": "View Products"
+  },
+  "AboutPage": {
+    "title": "Care, Reconsidered. DAYZ",
+    "content_1": "ESONLAB DAYZ begins where conventional skincare often ends.<br></br>Not at recovery, but at what follows — the condition skin settles into, and how it continues to evolve with time.",
+    "content_2": "Grounded in Korean ingredients, we look beyond the familiar to discover lesser-known actives,<br></br>chosen not for recognition, but for their clarity of purpose and performance.<br></br>Rather than excess, we work with restraint — developing each formulation slowly and selectively,<br></br>with every ingredient serving a precise role.",
+    "content_3": "We believe certainty matters more than speed.<br></br>Guided by safety-first decisions and thoughtful design,<br></br>we create skincare intended to remain dependable — not only in the moment, but over time."
+  },
+  "ProductsPage": {
+    "name": "SPIRUL365 GREEN HYDRO-LOCK CREAM",
+    "description": "67% Rice Bran Water + Spirulina (Micro Algae)<br></br>Clinically tested for sensitivity, hydration, and low irritation<br></br>7 FREE",
+    "buy_naver": "Naver Smart Store",
+    "buy_coupang": "Coupang"
+  },
+  "ContactPage": {
+    "title": "Contact Us",
+    "subtitle": "Business Partnership",
+    "description": "We look forward to business partnership and bulk purchase inquiries. <br></br>Experience new growth with ESONLAB DAYZ.",
+    "email_label": "Partnership Inquiry Email",
+    "email": "ESONLABDAYZ@GMAIL.COM"
   },
   "Footer": {
+    "tagline": "Care, Reconsidered. <br></br>DAYZ begins where conventional skincare ends.",
     "address": "Address: 2F, 39-33, Nosan 4-gil, Tongyeong-si, Gyeongnam",
     "company": "Company: ESONLAB Co., Ltd. | Email: ESONLABDAYZ@GMAIL.COM",
     "customer_center": "Customer Center: 070-1234-5678 (10:00 - 17:00, Weekends & Holidays excluded)",
     "brand_menu": "Brand",
     "shopping_menu": "Shop",
     "privacy": "Privacy Policy",
-    "terms": "Terms of Use"
-  },
-  "Navigation": {
-    "home": "Home",
-    "about": "Brand",
-    "products": "Products",
-    "contact": "Contact"
+    "terms": "Terms of Use",
+    "naver_store": "Naver Store",
+    "coupang": "Coupang"
   }
 }

@@ -25,8 +25,9 @@ export default function Footer() {
                             </div>
                         </div>
                         <p className="max-w-sm text-gray-400 font-medium leading-relaxed">
-                            케어, 그 본질을 다시 생각하다. <br />
-                            기존의 스킨케어가 끝나는 곳에서 데이즈가 시작됩니다.
+                            {t.rich('tagline', {
+                                br: () => <br />
+                            })}
                         </p>
                         <div className="space-y-2 text-[11px] font-bold text-gray-400 uppercase tracking-tighter">
                             <p>{t('address')}</p>
@@ -47,8 +48,8 @@ export default function Footer() {
                         <div className="space-y-6">
                             <h4 className="text-base font-black text-gray-900 uppercase tracking-[0.2em]">{t('shopping_menu')}</h4>
                             <ul className="space-y-4">
-                                <li><Link href="https://smartstore.naver.com/esonlab_dayz" target="_blank" className="text-base font-bold text-gray-400 hover:text-brand-primary transition-colors">네이버 스토어</Link></li>
-                                <li><Link href="https://www.coupang.com/vp/products/9212950703" target="_blank" className="text-base font-bold text-gray-400 hover:text-brand-primary transition-colors">쿠팡</Link></li>
+                                <li><Link href="https://smartstore.naver.com/esonlab_dayz" target="_blank" className="text-base font-bold text-gray-400 hover:text-brand-primary transition-colors">{t('naver_store')}</Link></li>
+                                <li><Link href="https://www.coupang.com/vp/products/9212950703" target="_blank" className="text-base font-bold text-gray-400 hover:text-brand-primary transition-colors">{t('coupang')}</Link></li>
                             </ul>
                         </div>
                     </div>

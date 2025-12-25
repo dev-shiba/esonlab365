@@ -4,8 +4,11 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { ArrowUpRight, ShieldCheck, Zap, Droplet, Sparkles } from "lucide-react";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export default function ProductsPage() {
+    const t = useTranslations('ProductsPage');
+
     return (
         <div className="pt-32 pb-40 px-6 bg-white min-h-screen">
             {/* Hero Section */}
@@ -25,25 +28,12 @@ export default function ProductsPage() {
                         </div>
 
                         <div className="space-y-6 text-lg text-gray-500 font-medium">
-                            <p className="text-2xl text-gray-900 font-black">스피룰365 그린 수분 크림</p>
-                            <ul className="space-y-3 max-w-lg mx-auto text-left">
-                                <li className="flex items-start gap-3">
-                                    <ShieldCheck className="w-5 h-5 text-brand-primary mt-1 shrink-0" />
-                                    <span>쌀겨수 67% + 스피룰리나 (Micro algae)</span>
-                                </li>
-                                <li className="flex items-start gap-3">
-                                    <ShieldCheck className="w-5 h-5 text-brand-primary mt-1 shrink-0" />
-                                    <span>민감성 피부 적합 / 수분 개선 / 피부 컨디션 개선 / 저자극 테스트 완료</span>
-                                </li>
-                                <li className="flex items-start gap-3">
-                                    <ShieldCheck className="w-5 h-5 text-brand-primary mt-1 shrink-0" />
-                                    <span>7 FREE (파라벤, 인공향료, 인공색소 등 유해성분 배제)</span>
-                                </li>
-                                <li className="flex items-start gap-3">
-                                    <ShieldCheck className="w-5 h-5 text-brand-primary mt-1 shrink-0" />
-                                    <span>하얀 색소를 넣지 않았습니다. 자연 그대로의 싱그러움을 느껴보세요.</span>
-                                </li>
-                            </ul>
+                            <p className="text-2xl text-gray-900 font-black">{t('name')}</p>
+                            <p className="leading-relaxed">
+                                {t.rich('description', {
+                                    br: () => <br />
+                                })}
+                            </p>
                         </div>
 
                         <div className="flex flex-wrap justify-center gap-4 pt-4">
@@ -52,14 +42,14 @@ export default function ProductsPage() {
                                 target="_blank"
                                 className="bg-[#2DB400] text-white px-8 py-4 rounded-2xl font-black flex items-center gap-2 hover:scale-[1.05] transition-all"
                             >
-                                네이버 스마트 스토어 <ArrowUpRight className="w-5 h-5" />
+                                {t('buy_naver')} <ArrowUpRight className="w-5 h-5" />
                             </Link>
                             <Link
                                 href="https://www.coupang.com/vp/products/9212950703?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnP68ymiW01fSy18AvuM2o--Wvq9X6st4QtX-ne5c3UZySmijSlFVhs0RS7kQ_aem_kodkOKmYDqRUVFixnL0sXg"
                                 target="_blank"
                                 className="bg-[#0074E9] text-white px-8 py-4 rounded-2xl font-black flex items-center gap-2 hover:scale-[1.05] transition-all"
                             >
-                                쿠팡 <ArrowUpRight className="w-5 h-5" />
+                                {t('buy_coupang')} <ArrowUpRight className="w-5 h-5" />
                             </Link>
                         </div>
                     </motion.div>

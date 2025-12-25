@@ -3,8 +3,11 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Sparkles, Leaf, ShieldCheck, Globe, Zap, Droplet } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function AboutPage() {
+    const t = useTranslations('AboutPage');
+
     return (
         <div className="pt-32 pb-40 px-6 bg-white min-h-screen">
             {/* Hero Section */}
@@ -32,19 +35,18 @@ export default function AboutPage() {
             <section className="max-w-7xl mx-auto pb-40">
                 <div className="text-center space-y-12 bg-gray-50/50 p-16 md:p-24 rounded-[60px] border border-brand-primary/5">
                     <div className="space-y-4">
-                        <h3 className="text-xl md:text-2xl font-black text-brand-primary uppercase tracking-[0.2em]">Care, Reconsidered. DAYZ</h3>
+                        <h3 className="text-xl md:text-2xl font-black text-brand-primary uppercase tracking-[0.2em]">{t('title')}</h3>
                         <div className="w-12 h-1 bg-brand-accent mx-auto"></div>
                     </div>
 
                     <div className="space-y-8 text-lg md:text-xl text-gray-600 font-medium leading-relaxed max-w-4xl mx-auto">
-                        <p>이손랩 데이즈는 기존의 스킨케어 공식을 넘어, <br className="hidden md:block" /> 더 나은 솔루션을 제안하는 브랜드입니다.</p>
-                        <p>우리는 한국의 원료를 기반으로 하며 동시에 새로운 원료를 찾아 <br className="hidden md:block" /> 함께 배합하여 새로운 방향을 제시합니다. 그 첫 시작은 스피룰리나입니다.</p>
+                        <p>{t.rich('content_1', { br: () => <br /> })}</p>
+                        <p>{t.rich('content_2', { br: () => <br /> })}</p>
                     </div>
 
                     <div className="pt-8 space-y-2">
                         <p className="text-2xl md:text-3xl font-black text-gray-900 leading-tight">
-                            매일매일 검증된 효능과 안전성 위에 <br />
-                            하나하나, 확실하게 만들어 갑니다
+                            {t.rich('content_3', { br: () => <br /> })}
                         </p>
                     </div>
                 </div>

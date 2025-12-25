@@ -2,8 +2,11 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export default function HeroSection() {
+    const t = useTranslations('HomePage');
+
     return (
         <section className="relative min-h-[85vh] lg:h-[90vh] flex items-center pt-32 pb-24 px-6 overflow-hidden">
             <div className="absolute inset-0 z-0">
@@ -30,7 +33,7 @@ export default function HeroSection() {
                         transition={{ delay: 0.1 }}
                         className="text-base md:text-lg font-extrabold text-brand-primary tracking-widest mb-1"
                     >
-                        이손랩 데이즈
+                        {t('hero_title')}
                     </motion.div>
                     <motion.h1
                         initial={{ opacity: 0, scale: 0.95 }}
@@ -38,8 +41,10 @@ export default function HeroSection() {
                         transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
                         className="text-3xl md:text-4xl lg:text-5xl font-black leading-[1.1] tracking-tight text-gray-900 drop-shadow-[0_1px_2px_rgba(255,255,255,0.8)]"
                     >
-                        피부 회복을 넘어선 <br />
-                        <span className="text-gradient drop-shadow-[0_2px_15px_rgba(37,99,235,0.4)]">광채수분크림</span>
+                        {t.rich('hero_copy', {
+                            br: () => <br />,
+                            highlight: (chunks) => <span className="text-gradient drop-shadow-[0_2px_15px_rgba(37,99,235,0.4)]">{chunks}</span>
+                        })}
                     </motion.h1>
                 </motion.div>
             </div>
