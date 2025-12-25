@@ -1,0 +1,22 @@
+{
+  "HomePage": {
+    "title": "ESONLAB DAYZ | 이손랩 데이즈",
+    "hero_copy": "피부 회복을 넘어선 광채수분크림",
+    "trust_text": "독특한 원료 배합과 효과적인 제품만을 선보입니다"
+  },
+  "Footer": {
+    "address": "주소: 경남 통영시 노산4길 39-33, 2층",
+    "company": "회사: 주식회사 이손랩 | 이메일: ESONLABDAYZ@GMAIL.COM",
+    "customer_center": "고객센터: 070-1234-5678 (10:00 - 17:00, 주말 및 공휴일 제외)",
+    "brand_menu": "브랜드",
+    "shopping_menu": "쇼핑",
+    "privacy": "개인정보처리방침",
+    "terms": "이용약관"
+  },
+  "Navigation": {
+    "home": "홈",
+    "about": "브랜드",
+    "products": "제품",
+    "contact": "문의"
+  }
+}

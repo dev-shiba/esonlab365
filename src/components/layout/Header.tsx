@@ -5,16 +5,20 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
+import { useTranslations } from "next-intl";
 
-const NAV_ITEMS = [
-    { name: "홈", href: "/" },
-    { name: "브랜드", href: "/about" },
-    { name: "제품", href: "/products" },
-    { name: "문의", href: "/contact" },
-];
+import LanguageSwitcher from "../common/LanguageSwitcher";
 
 export default function Header() {
     const pathname = usePathname();
+    const t = useTranslations('Navigation');
+
+    const NAV_ITEMS = [
+        { name: t('home'), href: "/" },
+        { name: t('about'), href: "/about" },
+        { name: t('products'), href: "/products" },
+        { name: t('contact'), href: "/contact" },
+    ];
 
     return (
         <nav className="fixed top-0 left-0 right-0 z-50 px-6 py-4">
@@ -35,7 +39,7 @@ export default function Header() {
                     <div className="hidden md:flex gap-10">
                         {NAV_ITEMS.map((item) => (
                             <Link
-                                key={item.name}
+                                key={item.href}
                                 href={item.href}
                                 className={cn(
                                     "text-base font-bold tracking-tight transition-all duration-300 relative group",
@@ -63,8 +67,11 @@ export default function Header() {
                             href="/contact"
                             className="bg-brand-primary text-white px-7 py-3 rounded-2xl text-xs font-black tracking-[0.1em] shadow-xl shadow-brand-primary/20 hover:shadow-brand-primary/40 hover:-translate-y-0.5 active:scale-95 transition-all"
                         >
-                            문의하기
+                            {t('contact')}
                         </Link>
+                        <div className="pl-2 border-l border-gray-200 ml-2">
+                            <LanguageSwitcher />
+                        </div>
                     </div>
                 </div>
             </div>

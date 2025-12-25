@@ -1,0 +1,22 @@
+{
+  "HomePage": {
+    "title": "ESONLAB DAYZ",
+    "hero_copy": "Beyond Repair. Hydration That Reveals Healthy Radiance.",
+    "trust_text": "We create only what truly works, through distinctive ingredient combinations."
+  },
+  "Footer": {
+    "address": "Address: 2F, 39-33, Nosan 4-gil, Tongyeong-si, Gyeongnam",
+    "company": "Company: ESONLAB Co., Ltd. | Email: ESONLABDAYZ@GMAIL.COM",
+    "customer_center": "Customer Center: 070-1234-5678 (10:00 - 17:00, Weekends & Holidays excluded)",
+    "brand_menu": "Brand",
+    "shopping_menu": "Shop",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use"
+  },
+  "Navigation": {
+    "home": "Home",
+    "about": "Brand",
+    "products": "Products",
+    "contact": "Contact"
+  }
+}

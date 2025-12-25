@@ -19,7 +19,10 @@ import HeroSection from "@/components/sections/HeroSection";
 import ReviewsSection from "@/components/sections/ReviewsSection";
 import FAQSection from "@/components/sections/FAQSection";
 
+import { useTranslations } from "next-intl";
+
 export default function Home() {
+  const t = useTranslations('HomePage');
   const containerRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -67,8 +70,7 @@ export default function Home() {
             className="text-center"
           >
             <p className="text-2xl md:text-4xl lg:text-5xl font-black text-gray-900 leading-[1.2] tracking-tight">
-              독특한 원료 배합과 <br />
-              효과적인 제품만을 선보입니다.
+              {t('trust_text')}
             </p>
           </motion.div>
 
