@@ -145,7 +145,7 @@ export default function Home() {
             </div>
           </motion.div>
 
-          <div className="flex-1 relative h-[500px] md:h-[650px] lg:h-[750px] w-full mt-32 md:mt-24 lg:mt-0 perspective-2000 flex justify-center lg:justify-start lg:-ml-10">
+          <div className="flex-1 relative h-[500px] md:h-[650px] lg:h-[750px] w-full mt-32 md:mt-24 lg:mt-0 perspective-2000 flex justify-center lg:justify-start lg:ml-[15%]">
             <div className="relative w-full max-w-[400px] md:max-w-[600px] lg:max-w-[800px] h-full">
               {[
                 { src: "/concept_spirulina.png", label: "Pure Spirulina", x: 0, y: -60 },
