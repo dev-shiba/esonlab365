@@ -46,10 +46,15 @@
     "content_3": "We believe certainty matters more than speed.<br></br>Guided by safety-first decisions and thoughtful design,<br></br>we create skincare intended to remain dependable — not only in the moment, but over time."
   },
   "ProductsPage": {
+    "subtitle": "Products",
+    "product_title_line1": "SPIRUL365",
+    "product_title_line2": "GREEN HYDRO-LOCK",
     "name": "SPIRUL365 GREEN HYDRO-LOCK CREAM",
     "description": "67% Rice Bran Water + Spirulina (Micro Algae)<br></br>Clinically tested for sensitivity, hydration, and low irritation<br></br>7 FREE",
     "buy_naver": "Naver Smart Store",
-    "buy_coupang": "Coupang"
+    "buy_coupang": "Coupang",
+    "visual_title": "Product Visuals",
+    "visual_hydration": "67% Rice Bran Water Base"
   },
   "ContactPage": {
     "title": "Contact Us",

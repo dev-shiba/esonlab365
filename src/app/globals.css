@@ -170,3 +170,55 @@ body {
 .animate-fade-in {
   animation: fade-in 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
+
+/* Wavy Line Wobble Animations - Subtle */
+@keyframes wave-path-1 {
+  0%, 100% {
+    transform: translateY(0) scaleY(1);
+  }
+  25% {
+    transform: translateY(-8px) scaleY(1.03);
+  }
+  50% {
+    transform: translateY(8px) scaleY(0.97);
+  }
+  75% {
+    transform: translateY(-4px) scaleY(1.01);
+  }
+}
+
+@keyframes wave-path-2 {
+  0%, 100% {
+    transform: translateY(0) scaleY(1) translateX(0);
+  }
+  33% {
+    transform: translateY(6px) scaleY(1.02) translateX(-4px);
+  }
+  66% {
+    transform: translateY(-6px) scaleY(0.98) translateX(4px);
+  }
+}
+
+@keyframes wave-path-3 {
+  0%, 100% {
+    transform: translateY(0) scaleX(1);
+  }
+  50% {
+    transform: translateY(-10px) scaleX(1.02);
+  }
+}
+
+.animate-wave-path-1 {
+  animation: wave-path-1 10s ease-in-out infinite;
+  transform-origin: center;
+}
+
+.animate-wave-path-2 {
+  animation: wave-path-2 12s ease-in-out infinite;
+  transform-origin: center;
+}
+
+.animate-wave-path-3 {
+  animation: wave-path-3 14s ease-in-out infinite;
+  transform-origin: center;
+}

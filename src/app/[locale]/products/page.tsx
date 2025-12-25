@@ -20,10 +20,10 @@ export default function ProductsPage() {
                         className="space-y-10 max-w-3xl"
                     >
                         <div className="space-y-4">
-                            <h2 className="text-base font-black text-brand-primary tracking-[0.4em] uppercase">비즈니스 협력</h2>
+                            <h2 className="text-base font-black text-brand-primary tracking-[0.4em] uppercase">{t('subtitle')}</h2>
                             <h1 className="text-4xl md:text-5xl font-black text-gray-900 leading-[1] tracking-tighter uppercase">
-                                스피룰365 <br />
-                                <span className="text-brand-primary">그린 하이드로-락</span>
+                                {t('product_title_line1')} <br />
+                                <span className="text-brand-primary">{t('product_title_line2')}</span>
                             </h1>
                         </div>
 
@@ -71,7 +71,7 @@ export default function ProductsPage() {
 
             {/* Asset Showcase */}
             <section className="max-w-7xl mx-auto space-y-20">
-                <h2 className="text-center text-4xl font-black text-gray-900 tracking-tight">상세 비주얼</h2>
+                <h2 className="text-center text-4xl font-black text-gray-900 tracking-tight">{t('visual_title')}</h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                     <div className="aspect-[3/4] rounded-[40px] bg-gray-50 relative overflow-hidden">
                         <Image src="/product_tube_open.png" alt="Tube Open" fill className="object-contain p-12" />
@@ -81,7 +81,7 @@ export default function ProductsPage() {
                         <div className="absolute inset-0 bg-black/10"></div>
                         <div className="relative z-10 text-white text-center p-8">
                             <p className="text-xs font-black tracking-widest mb-2">HYDRATION</p>
-                            <p className="text-2xl font-black">67% 쌀겨수 베이스</p>
+                            <p className="text-2xl font-black">{t('visual_hydration')}</p>
                         </div>
                     </div>
                     <div className="aspect-[3/4] rounded-[40px] bg-gray-50 relative overflow-hidden">

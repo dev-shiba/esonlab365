@@ -46,10 +46,15 @@
     "content_3": "매일매일 검증된 효능과 안전성 위에<br></br>하나하나, 확실하게 만들어 갑니다."
   },
   "ProductsPage": {
+    "subtitle": "제품 소개",
+    "product_title_line1": "스피룰365",
+    "product_title_line2": "그린 하이드로-락",
     "name": "스피룰365 그린 수분 크림",
     "description": "쌀겨수 67% + 스피룰리나 (Micro algae)<br></br>민감성 피부 적합 / 수분 개선 / 피부 컨디션 개선 / 저자극 테스트 완료<br></br>7 FREE<br></br>하얀 색소 무첨가",
     "buy_naver": "네이버 스마트스토어",
-    "buy_coupang": "쿠팡"
+    "buy_coupang": "쿠팡",
+    "visual_title": "상세 비주얼",
+    "visual_hydration": "67% 쌀겨수 베이스"
   },
   "ContactPage": {
     "title": "문의하기",
