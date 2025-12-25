@@ -6,7 +6,8 @@
     "home": "Home",
     "about": "About",
     "products": "Products",
-    "contact": "Contact"
+    "contact": "Contact",
+    "store": "Store"
   },
   "HomePage": {
     "hero_title": "ESONLAB DAYZ",
@@ -23,9 +24,9 @@
     "rice_bran_water": "Rice Bran Water",
     "pudding_texture": "Pudding Texture",
     "clean_science": "Clean Science",
-    "philosophy_title": "To. You who dream of <br></br><highlight>geniunely sincere changes</highlight>",
+    "philosophy_title": "<highlight>Gentle care</highlight> <br></br>for everyone's skin",
     "philosophy_desc_1": "\"Why can't sensitive skin have a healthy radiance?\" <br></br>We held onto this single question for 365 days.",
-    "philosophy_desc_2": "Spirulina with strong vitality <desktop>is cultivated directly in the cleanest environment, </desktop><desktop>competing only with ingredients without pigments or fragrances.</desktop>",
+    "philosophy_desc_2": "Spirulina with strong vitality <desktop>is cultivated directly in the cleanest environment, </desktop><desktop>delivering the power of pure ingredients to your skin.</desktop>",
     "stats_protein": "Protein",
     "stats_protein_unit": "Spirulina Content",
     "stats_purity": "Purity",
@@ -34,12 +35,34 @@
     "stats_skin_unit": "Hypoallergenic Test",
     "stats_moisture": "Radiance",
     "stats_moisture_unit": "Clinical Hydration",
-    "cta_title": "The beginning of healthy daily life <br></br>that your skin will remember",
-    "cta_desc": "Experience the miracle of ESONLAB DAYZ right now. <br></br>Benefits available immediately upon signing up for the official mall await you.",
+    "cta_title": "A new skincare journey <br></br>with ESONLAB DAYZ",
+    "cta_desc": "We propose simple and clear care <br></br>focused on essence, not complex ingredients.",
     "cta_brand": "Brand Story",
-    "cta_product": "View Products"
+    "cta_product": "View Products",
+    "certifications": [
+      {
+        "title": "Baby-Safe Ingredients",
+        "desc": "Formulated with Baby-Friendly Ingredients Only"
+      },
+      {
+        "title": "Superfood Ingredients",
+        "desc": "Enriched with Superfood Spirulina Micro-Algae"
+      },
+      {
+        "title": "No Artificial Additives",
+        "desc": "Free from Artificial Fragrances & Colorants"
+      },
+      {
+        "title": "All Ingredients Green Grade",
+        "desc": "Formulated without harmful ingredients for sensitive skin"
+      }
+    ]
   },
   "AboutPage": {
+    "subtitle": "Brand Philosophy",
+    "hero_title_line1": "Care,",
+    "hero_title_line2": "Reconsidered.",
+    "hero_description": "We already live in a sufficiently complex world. <br></br>Your skincare should be simple and clear.",
     "title": "Care, Reconsidered. DAYZ",
     "content_1": "ESONLAB DAYZ begins where conventional skincare often ends.<br></br>Not at recovery, but at what follows — the condition skin settles into, and how it continues to evolve with time.",
     "content_2": "Grounded in Korean ingredients, we look beyond the familiar to discover lesser-known actives,<br></br>chosen not for recognition, but for their clarity of purpose and performance.<br></br>Rather than excess, we work with restraint — developing each formulation slowly and selectively,<br></br>with every ingredient serving a precise role.",
@@ -51,6 +74,12 @@
     "product_title_line2": "GREEN HYDRO-LOCK",
     "name": "SPIRUL365 GREEN HYDRO-LOCK CREAM",
     "description": "67% Rice Bran Water + Spirulina (Micro Algae)<br></br>Clinically tested for sensitivity, hydration, and low irritation<br></br>7 FREE",
+    "features": [
+      "67% Rice Bran Water + Spirulina (Micro algae)",
+      "Suitable for sensitive skin / Moisture improvement / Skin condition improvement / Hypoallergenic test completed",
+      "7 FREE (Paraben, artificial fragrance, artificial colorants, etc. harmful ingredients excluded)",
+      "No white pigments added. Feel the freshness of nature as it is."
+    ],
     "buy_naver": "Naver Smart Store",
     "buy_coupang": "Coupang",
     "visual_title": "Product Visuals",

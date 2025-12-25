@@ -35,7 +35,6 @@ export default async function LocaleLayout({
           <main>
             {children}
           </main>
-          <CertificationSection />
           <Footer />
         </NextIntlClientProvider>
       </body>

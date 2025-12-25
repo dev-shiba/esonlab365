@@ -6,7 +6,8 @@
     "home": "홈",
     "about": "브랜드",
     "products": "제품",
-    "contact": "문의"
+    "contact": "문의",
+    "store": "스토어"
   },
   "HomePage": {
     "hero_title": "이손랩 데이즈",
@@ -23,9 +24,9 @@
     "rice_bran_water": "Rice Bran Water",
     "pudding_texture": "Pudding Texture",
     "clean_science": "Clean Science",
-    "philosophy_title": "To. <br></br><highlight>진심 어린 변화</highlight>를 <br></br>꿈꾸는 당신에게",
+    "philosophy_title": "모두의 피부를 위한,<br></br> <highlight>자극 없는 케어</highlight>",
     "philosophy_desc_1": "\"왜 민감성 피부는 건강한 광채를 가질 수 없을까?\" <br></br>우리는 이 질문 하나에 365일을 매달렸습니다.",
-    "philosophy_desc_2": "강인한 생명력을 가진 스피룰리나를 <desktop>가장 깨끗한 환경에서 직접 배양하여 </desktop><desktop>색소와 향료 없이 오직 성분으로만 승부합니다.</desktop>",
+    "philosophy_desc_2": "강인한 생명력을 가진 스피룰리나를 <desktop>가장 깨끗한 환경에서 직접 배양하여 </desktop><desktop>순수한 성분의 힘만으로 피부에 전달합니다.</desktop>",
     "stats_protein": "고단백질",
     "stats_protein_unit": "스피룰리나 함량",
     "stats_purity": "원료 순도",
@@ -34,12 +35,34 @@
     "stats_skin_unit": "저자극 테스트",
     "stats_moisture": "수분 광채",
     "stats_moisture_unit": "임상 보습력",
-    "cta_title": "피부가 기억할 <br></br>건강한 일상의 시작",
-    "cta_desc": "지금 바로 이손랩 데이즈의 기적을 직접 경험해 보세요. <br></br>공식몰 가입 즉시 사용 가능한 혜택이 기다리고 있습니다.",
+    "cta_title": "이손랩 데이즈와 함께하는 <br></br>새로운 스킨케어 여정",
+    "cta_desc": "복잡한 성분이 아닌, 본질에 집중한 <br></br>단순하고 명확한 케어를 제안합니다.",
     "cta_brand": "브랜드 자세히 보기",
-    "cta_product": "제품 보기"
+    "cta_product": "제품 보기",
+    "certifications": [
+      {
+        "title": "영유아 안심 성분",
+        "desc": "Formulated with Baby-Friendly Ingredients Only"
+      },
+      {
+        "title": "슈퍼푸드 원료 함유",
+        "desc": "Enriched with Superfood Spirulina Micro-Algae"
+      },
+      {
+        "title": "인공색소/향료 무첨가",
+        "desc": "Free from Artificial Fragrances & Colorants"
+      },
+      {
+        "title": "전성분 그린등급",
+        "desc": "Formulated without harmful ingredients for sensitive skin"
+      }
+    ]
   },
   "AboutPage": {
+    "subtitle": "브랜드 철학",
+    "hero_title_line1": "케어,",
+    "hero_title_line2": "그 본질을 다시 생각하다.",
+    "hero_description": "우리는 이미 충분히 복잡한 세상에 살고 있습니다. <br></br>당신의 스킨케어만큼은 단순하고 명확해야 합니다.",
     "title": "Care, Reconsidered. DAYZ",
     "content_1": "이손랩 데이즈는 기존의 스킨케어 공식을 넘어, 더 나은 솔루션을 제안하는 브랜드입니다.",
     "content_2": "우리는 한국의 원료를 기반으로 하며 동시에 새로운 원료를 찾아 함께 배합하여 새로운 방향을 제시합니다.<br></br>그 첫 시작은 스피룰리나입니다.",
@@ -51,6 +74,12 @@
     "product_title_line2": "그린 하이드로-락",
     "name": "스피룰365 그린 수분 크림",
     "description": "쌀겨수 67% + 스피룰리나 (Micro algae)<br></br>민감성 피부 적합 / 수분 개선 / 피부 컨디션 개선 / 저자극 테스트 완료<br></br>7 FREE<br></br>하얀 색소 무첨가",
+    "features": [
+      "쌀겨수 67% + 스피룰리나 (Micro algae)",
+      "민감성 피부 적합 / 수분 개선 / 피부 컨디션 개선 / 저자극 테스트 완료",
+      "7 FREE (파라벤, 인공향료, 인공색소 등 유해성분 배제)",
+      "하얀 색소를 넣지 않았습니다. 자연 그대로의 싱그러움을 느껴보세요."
+    ],
     "buy_naver": "네이버 스마트스토어",
     "buy_coupang": "쿠팡",
     "visual_title": "상세 비주얼",

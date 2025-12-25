@@ -20,6 +20,7 @@ import ReviewsSection from "@/components/sections/ReviewsSection";
 import FAQSection from "@/components/sections/FAQSection";
 
 import { useTranslations } from "next-intl";
+import CertificationSection from "@/components/sections/CertificationSection";
 
 export default function Home() {
   const t = useTranslations('HomePage');
@@ -126,6 +127,7 @@ export default function Home() {
       </section>
 
 
+
       {/* Content Showcase Section */}
       <section className="py-40 px-6 bg-brand-secondary/10 overflow-hidden">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-20">
@@ -200,81 +202,95 @@ export default function Home() {
       </section>
 
 
-      <ReviewsSection />
+      {/* <ReviewsSection /> */}
 
       {/* Brand Story (Philosophy) */}
-      <section id="연구스토리" className="py-32 px-6 bg-brand-primary overflow-hidden relative">
-        <div className="absolute inset-0 z-0 hidden lg:block">
-          <div className="absolute inset-y-0 left-0 w-[55%] pointer-events-none" style={{ clipPath: 'polygon(0 0, 100% 0, 82% 100%, 0 100%)' }}>
-            <Image
-              src="/Generated Image December 25, 2025 - 6_26PM.jpeg"
-              alt="Brand Philosophy"
-              fill
-              className="object-cover opacity-80"
-              priority
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-brand-primary/40 to-transparent"></div>
-          </div>
-        </div>
+      <section id="연구스토리" className="py-16 md:py-24 lg:py-32 px-4 sm:px-6 bg-white overflow-hidden relative">
+        <div className="max-w-7xl mx-auto space-y-12 md:space-y-16 lg:space-y-20">
+          <div className="flex flex-col lg:flex-row items-start lg:items-center gap-8 md:gap-12 lg:gap-24">
+            {/* 이미지 영역 - 왼쪽 (모바일에서 숨김) */}
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+              className="hidden lg:block flex-1 relative h-[500px] md:h-[600px] lg:h-[700px] w-full"
+            >
+              <Image
+                src="/Gemini_Generated_Image_e6ren3e6ren3e6re.png"
+                alt="Brand Philosophy"
+                fill
+                className="object-cover rounded-[32px] md:rounded-[40px]"
+                priority
+              />
+            </motion.div>
 
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-24 relative z-10">
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="flex-1 space-y-12"
-          >
-            <div className="space-y-6">
-              <h2 className="text-2xl md:text-4xl lg:text-5xl font-black text-white leading-[1.1]">
-                {t.rich('philosophy_title', {
-                  br: () => <br />,
-                  highlight: (chunks) => <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-200 via-white to-blue-100">{chunks}</span>
-                })}
-              </h2>
-              <div className="w-20 h-1 bg-brand-accent"></div>
-            </div>
+            {/* 텍스트 영역 - 오른쪽 (모바일에서 전체 너비) */}
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+              className="w-full lg:flex-1 space-y-6 md:space-y-8 lg:space-y-10"
+            >
+              <div className="space-y-3 md:space-y-4 text-center lg:text-left">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-gray-900 leading-[1.2] tracking-tight">
+                  {t.rich('philosophy_title', {
+                    br: () => <br />,
+                    highlight: (chunks) => <span className="text-gradient">{chunks}</span>
+                  })}
+                </h2>
+                <div className="w-12 md:w-16 h-0.5 bg-brand-primary mx-auto lg:mx-0"></div>
+              </div>
 
-            <div className="space-y-8 text-xl text-white/90 leading-relaxed font-medium">
-              <p>
-                {t.rich('philosophy_desc_1', {
-                  br: () => <br />
-                })}
-              </p>
-              <p>
-                {t.rich('philosophy_desc_2', {
-                  desktop: (chunks) => <><br className="hidden md:block" />{chunks}</>
-                })}
-              </p>
-            </div>
+              <div className="space-y-4 md:space-y-6 text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed text-center lg:text-left">
+                <p className="font-medium">
+                  {t.rich('philosophy_desc_1', {
+                    br: () => <br />
+                  })}
+                </p>
+                <p className="text-gray-600 leading-relaxed">
+                  {t.rich('philosophy_desc_2', {
+                    desktop: (chunks) => <><br className="hidden md:block" />{chunks}</>
+                  })}
+                </p>
+              </div>
 
-          </motion.div>
-
-          <div className="flex-1 w-full lg:ml-[10%] grid grid-cols-2 gap-4 md:gap-8">
-            {[
-              { label: t('stats_protein'), value: "60%", unit: t('stats_protein_unit') },
-              { label: t('stats_purity'), value: "0%", unit: t('stats_purity_unit') },
-              { label: t('stats_skin'), value: "100%", unit: t('stats_skin_unit') },
-              { label: t('stats_moisture'), value: "24h", unit: t('stats_moisture_unit') }
-            ].map((stat, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, scale: 0.8 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                whileHover={{ scale: 1.05, rotate: i % 2 === 0 ? 2 : -2 }}
-                className="bg-white/5 backdrop-blur-xl border border-white/10 p-10 rounded-[50px] space-y-2 group transition-colors hover:bg-white/10"
-              >
-                <div className="text-sm font-black text-brand-accent tracking-widest uppercase opacity-60 group-hover:opacity-100 transition-opacity">
-                  {stat.label}
+              {/* 통계 - 2x2 그리드 */}
+              <div className="bg-gray-50 rounded-xl md:rounded-2xl p-4 sm:p-6 md:p-8 lg:p-10 mt-6 md:mt-8">
+                <div className="grid grid-cols-2 gap-3 sm:gap-4 md:gap-6 lg:gap-8">
+                  {[
+                    { label: t('stats_protein'), value: "60%", unit: t('stats_protein_unit') },
+                    { label: t('stats_purity'), value: "0%", unit: t('stats_purity_unit') },
+                    { label: t('stats_skin'), value: "100%", unit: t('stats_skin_unit') },
+                    { label: t('stats_moisture'), value: "24h", unit: t('stats_moisture_unit') }
+                  ].map((stat, i) => (
+                    <motion.div
+                      key={i}
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: i * 0.1 }}
+                      className="flex flex-col items-center gap-1 sm:gap-1.5 md:gap-2 text-center"
+                    >
+                      <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-brand-primary leading-none">{stat.value}</span>
+                      <div className="flex flex-col gap-0.5 sm:gap-1">
+                        <span className="text-xs sm:text-sm md:text-base lg:text-lg font-black text-gray-900 leading-tight">{stat.label}</span>
+                        <span className="text-[10px] sm:text-xs md:text-sm text-gray-600 font-medium leading-tight">{stat.unit}</span>
+                      </div>
+                    </motion.div>
+                  ))}
                 </div>
-                <div className="text-5xl font-black text-white">{stat.value}</div>
-                <div className="text-xs text-white/40 font-bold">{stat.unit}</div>
-              </motion.div>
-            ))}
+              </div>
+            </motion.div>
+          </div>
+
+          {/* CertificationSection - 하단, 전체 너비 */}
+          <div className="pt-8 md:pt-12 border-t border-gray-100">
+            <CertificationSection />
           </div>
         </div>
+
       </section>
 
 

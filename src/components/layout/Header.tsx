@@ -60,7 +60,7 @@ export default function Header() {
                             target="_blank"
                             className="hidden lg:block text-sm font-bold text-black/60 hover:text-brand-primary transition-colors tracking-tight"
                         >
-                            네이버 스토어
+                            {t('store')}
                         </Link>
                         <Link
                             href="/contact"
