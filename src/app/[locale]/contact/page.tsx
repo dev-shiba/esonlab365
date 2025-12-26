@@ -18,8 +18,8 @@ export default function ContactPage() {
                     className="text-center space-y-12 md:space-y-16"
                 >
                     <div className="space-y-6">
-                        <h2 className="text-sm md:text-base font-black text-brand-primary tracking-[0.4em] uppercase">{t('subtitle')}</h2>
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-gray-900 leading-[1.1] tracking-tight">
+                        <h2 className="text-xs md:text-sm font-black text-brand-primary tracking-[0.3em] uppercase">{t('subtitle')}</h2>
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 leading-[1.1] tracking-tight">
                             {t('title')}
                         </h1>
                     </div>

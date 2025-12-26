@@ -17,8 +17,8 @@ export default function AboutPage() {
                     className="text-center space-y-8"
                 >
                     <div className="space-y-6">
-                        <h2 className="text-sm md:text-base font-bold text-brand-primary tracking-widest uppercase">{t('subtitle')}</h2>
-                        <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-gray-900 leading-[1.1] tracking-tight">
+                        <h2 className="text-xs md:text-sm font-black text-brand-primary tracking-[0.3em] uppercase">{t('subtitle')}</h2>
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 leading-[1.1] tracking-tight">
                             {t('hero_title_line1')} <br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-blue-400">{t('hero_title_line2')}</span>
                         </h1>
