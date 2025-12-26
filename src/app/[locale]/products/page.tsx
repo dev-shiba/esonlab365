@@ -79,7 +79,7 @@ export default function ProductsPage() {
                         className="flex-1 relative w-full aspect-square max-w-4xl lg:max-w-5xl xl:max-w-6xl bg-gray-50 rounded-[48px] md:rounded-[60px] overflow-hidden"
                     >
                         <Image
-                            src="/251106_튜브우측45도3 copy.png"
+                            src="/product_hero.webp"
                             alt="SPIRUL365 Cream Package"
                             fill
                             className="object-contain"
