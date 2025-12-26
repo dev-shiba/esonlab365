@@ -56,7 +56,13 @@
         "title": "All Ingredients Green Grade",
         "desc": "Formulated without harmful ingredients for sensitive skin"
       }
-    ]
+    ],
+    "faq_q1": "What is SPIRUL365?",
+    "faq_a1": "SPIRUL365 is a moisturizing cream made with 67% rice bran water and directly cultivated spirulina. It's made only with ingredients, without pigments or fragrances.",
+    "faq_q2": "Can it be used on sensitive skin?",
+    "faq_a2": "Yes, it has completed hypoallergenic testing and is suitable for sensitive skin as it contains no pigments or fragrances.",
+    "faq_q3": "What are the benefits of spirulina?",
+    "faq_a3": "Spirulina contains over 60% protein and provides nutrition and moisture to the skin, giving it a healthy radiance."
   },
   "AboutPage": {
     "subtitle": "Brand Philosophy",

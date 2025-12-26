@@ -21,6 +21,7 @@ import FAQSection from "@/components/sections/FAQSection";
 
 import { useTranslations } from "next-intl";
 import CertificationSection from "@/components/sections/CertificationSection";
+import FAQSchema from "@/components/seo/FAQSchema";
 
 export default function Home() {
   const t = useTranslations('HomePage');
@@ -35,6 +36,7 @@ export default function Home() {
 
   return (
     <div ref={containerRef} className="relative min-h-screen bg-white font-sans selection:bg-brand-secondary selection:text-brand-primary">
+      <FAQSchema />
 
       <HeroSection />
 
@@ -88,7 +90,7 @@ export default function Home() {
             >
               <Image
                 src="/k_beauty_ingredients_v3.png"
-                alt="Unique Ingredients"
+                alt="한국 전통 뷰티 성분 - 쌀겨수와 스피룰리나를 활용한 자연 유래 스킨케어 원료"
                 fill
                 className="object-cover transition-transform duration-700"
               />
@@ -110,7 +112,7 @@ export default function Home() {
             >
               <Image
                 src="/effective_product_melon.png"
-                alt="Effective Product"
+                alt="효과적인 스피룰리나 수분 크림 - 피부 수분 공급 및 영양 케어"
                 fill
                 className="object-cover transition-transform duration-700"
               />
@@ -218,7 +220,7 @@ export default function Home() {
             >
               <Image
                 src="/Gemini_Generated_Image_e6ren3e6ren3e6re.png"
-                alt="Brand Philosophy"
+                alt="이손랩 데이즈 브랜드 철학 - 자연과 과학의 조화로 만드는 스킨케어"
                 fill
                 className="object-cover rounded-[32px] md:rounded-[40px]"
                 priority
